@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+long int cal(long int x,long int y)
+{
+	return (x*((y*(y+1))/2));
+}
+int main()
+{
+	long int t,n;
+	scanf("%ld",&t);
+	while(t--)
+	{
+		long int sum3=0,x,y,z,i,n1,n2,n3;
+		scanf("%ld",&n);
+		scanf("%ld",&x);
+		scanf("%ld",&y);
+		z=x*y;
+		n--;
+		n1=n/x;
+		n2=n/y;
+		n3=n/z;
+	sum3=cal(x,n1)+cal(y,n2)-cal(z,n3);	
+		printf("%ld\n",sum3);
+	}
+return 0;
+}
